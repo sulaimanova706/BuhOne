@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.alg-center {
+    Align-items: center;
+}
+
+.jst-btw {
+    Justify-content: space-between;
+}
+
+.jst-rnd {
+    Justify-content: space-around;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*################ HEADER ################*/
+header {
+    position: absolute;
+    width: 100%;
+    padding: 3rem 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+header .col-4 {
+    width: 30%;
+}
+
+header .col-8 {
+    width: 70%;
+}
+
+header .col-4 ul li {
+    font-family: Merriweather, sans-serif;
+    font-weight: 900;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    color: #005BC1;
+    margin-right: 3rem;
+}
+header .mobile-menu{
+    display: none;
+}
+header .menu-items1 li {
+    font-family: Lato, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: #000;
+    margin-left: 3rem;
+    width: 100%;
+}
+
+header .menu-items1 svg {
+    margin-right: 2rem;
+}
+
+header .menu-items li a {
+    text-decoration: none;
+    color: #222;
+}
+
+header .menu-items li {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    width: 100%;
+    margin-top: 2.2rem;
+}
+.mobile-btn{
+    position: fixed;
+    width: 45px;
+    height: 40px;
+    align-items: center;
+    display: none;
+    right: 5%;
+    top: 5%;
+}
+.mobile-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background: #005BC1;
+    position: relative;
+}
+.mobile-btn span:before, .mobile-btn span:after {
+    content: "";
+    display: inline-block;
+    background: #005BC1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.mobile-btn span:before{
+    transform: translateY(-10px);
+}
+.mobile-btn span:after{
+    transform: translateY(10px);
+}
+.show-menu li{
+    margin-top: 20px;
+}
+.show span{
+    background: transparent;
+}
+.show span:before{
+    transform: translateY(0) rotate(-45deg);
+}
+.show span:after{
+    transform: translateY(0) rotate(45deg);
+}
+/*################ HEADER ################*/
+/*################ HOME ##################*/
+#home {
+    width: 100%;
+    height: 80rem;
+    background-image: url("../images/fon.png");
+    background-size: cover;
+    color: #fff;
+}
+
+#home .home-content {
+    padding-top: 28rem;
+}
+
+#home .home-content h3 {
+    font-family: Merriweather, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 6.6rem;
+    width: 60%;
+    margin-bottom: 8rem;
+}
+
+.btn {
+    width: 27rem;
+    height: 6rem;
+    background: #005BC1;
+    border: none;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.owl-dots button {
+    width: 3%;
+    float: left;
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin-top: 12rem;
+    opacity: 0.4;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    outline: none;
+    float: right;
+}
+
+#home .owl-theme .owl-nav button svg rect {
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+#home .owl-theme .owl-nav button svg .active rect, #home .owl-theme .owl-nav button svg:hover rect {
+    opacity: 0.4;
+}
+
+#home .owl-theme .owl-dots .owl-dot.active span, #home .owl-theme .owl-dots .owl-dot:hover span {
+    opacity: 1;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    margin: 5rem 0 0 0;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    text-decoration: none;
+}
+
+/*################ HOME ##################*/
+/*################ SERVICES ##############*/
+#services {
+    background: #EBEBEB;
+    padding: 14rem 0;
+}
+
+.name {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #BDBDBD;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-family: Merriweather, sans-serif;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 6.9rem;
+    color: #333333;
+    margin-bottom: 10rem;
+}
+
+#services .row {
+    flex-wrap: wrap;
+    margin: -1.5rem;
+}
+
+#services .col-2 {
+    width: 33%;
+    padding: 1.5rem;
+}
+
+#services .col-2 img {
+    width: 100%;
+}
+
+#services .post-item {
+    position: relative;
+}
+
+#services .post-item h3 {
+    position: absolute;
+    bottom: 4.5rem;
+    left: 4.5rem;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    width: 80%;
+    color: #fff;
+}
+
+/*################ SERVICES ##############*/
+/*################ COMPANY ###############*/
+#company {
+    padding: 14rem 0;
+}
+
+.title span {
+    color: #005BC1;
+}
+
+#company .col-6 {
+    width: 50%;
+}
+
+#company .container .row .col-6 .row {
+    margin: -1.5rem;
+}
+
+#company .row {
+    margin: 0 -5rem;
+}
+
+#company .col-6 p {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #000;
+    width: 80%;
+}
+
+#company .col-6 .col-3 {
+    width: 50%;
+    padding: 1.5rem;
+}
+
+#company .col-6 .col-3 .post-item {
+    background: #EBEBEB;
+    font-family: Lato, sans-serif;
+    color: #000;
+    padding: 4rem;
+    transition: 0.3s;
+}
+
+#company .col-6 .col-3 .post-item h3 {
+    font-weight: 900;
+    font-size: 5.5rem;
+    line-height: 6.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+#company .col-6 .col-3 .post-item p {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    width: 80%;
+    margin-bottom: 4.7rem;
+}
+
+#company .col-6 .col-3 .post-item a {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color:#005BC1;
+}
+#company .col-6 .col-3 .post-item a:hover{
+    color:#fff;
+}
+#company .col-6 .col-3 .post-item:hover {
+    background-color: #005BC1;
+    cursor: pointer;
+}
+
+#company .col-6 .col-3 .post-item:hover p, #company .col-6 .col-3 .post-item:hover a {
+    color: #fff;
+}
+
+/*################ COMPANY ###############*/
+/*################ CLIENTS ###############*/
+#clients {
+    background: #EBEBEB;
+    padding: 10rem 0 20rem;
+}
+
+#clients .row {
+    margin: 0 -1.5rem;
+}
+
+#clients .img {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+#clients .owl-theme .owl-dots .owl-dot span {
+    background-color: #005BC1;
+    opacity: 0.4;
+}
+
+#clients .owl-theme .owl-dots .owl-dot.active span, #clients .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #005BC1;
+    opacity: 1;
+}
+
+#clients .owl-theme .owl-nav button svg rect {
+    background-color: #005BC1;
+    opacity: 0.2;
+}
+
+#clients .owl-theme .owl-nav button svg .active rect, #clients .owl-theme .owl-nav button svg:hover rect {
+    opacity: 1;
+}
+
+/*################ CLIENTS ###############*/
+/*################ COMMENT ###############*/
+#comment {
+    padding: 14rem 0 25rem;
+}
+
+#comment .box {
+    width: 100%;
+    background: #EBEBEB;
+    padding: 5rem 10rem;
+    color: #000;
+    font-family: Lato, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+#comment .box p {
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+#comment .box .person {
+    margin-left: 3.5rem;
+}
+
+#comment .box .person-name {
+    font-weight: 900;
+}
+
+#comment .box .person-position {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #4F4F4F;
+    margin-top: 1rem;
+}
+
+#comment .owl-theme .owl-dots .owl-dot span {
+    background-color: #005BC1;
+    opacity: 0.4;
+}
+
+#comment .owl-theme .owl-dots .owl-dot.active span, #comment .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #005BC1;
+    opacity: 1;
+}
+
+#comment .owl-theme .owl-nav button svg rect {
+    background-color: #005BC1;
+    opacity: 0.2;
+}
+
+#comment .owl-theme .owl-nav button svg .active rect, #comment .owl-theme .owl-nav button svg:hover rect {
+    opacity: 1;
+}
+
+/*################ COMMENT ###############*/
+/*################ CONTACTS ##############*/
+#contacts {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fon.png), #C4C4C4;
+    padding: 12.2rem 0;
+}
+
+#contacts .col-6 {
+    width: 50%;
+    margin-left: 2rem;
+    color: #fff;
+    font-family: Lato, sans-serif;
+}
+
+#contacts .col-6 h3 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 6.9rem;
+    margin-bottom: 6rem;
+}
+
+#contacts .col-6 p {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+    line-height: 2.5rem;
+    width: 80%;
+}
+
+#contacts .col-6 svg {
+    margin-right: 1.5rem;
+}
+#contacts .col-6 ul li{
+    margin-right: 3rem;
+}
+#contacts .col-6 {
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+}
+
+.fl-wrap {
+    flex-wrap: wrap;
+}
+
+#contacts .col-6 input {
+    background-color: transparent;
+    border-bottom: 0.1rem solid #FFFFFF;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 1.5rem 0;
+    color: #fff;
+    outline: none;
+    font-size: 2.1rem;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 2.1rem;
+    line-height: 2.9rem;
+}
+
+#contacts .col-6 textarea {
+    background-color: transparent;
+    resize: none;
+    color: #fff;
+    border-bottom: 0.1rem solid #FFFFFF;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    width: 100%;
+    font-size: 2.1rem;
+}
+
+#contacts .col-6 label {
+    padding: 0 1rem 1rem 0;
+    width: 50%;
+}
+
+#contacts .col-6 label + label {
+    padding: 0 0 0 0;
+}
+
+#contacts .col-6 .message {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+#contacts .col-6 form button {
+    float: right;
+    margin-top: 5rem;
+}
+
+.fl-end {
+    justify-content: flex-end;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+/*################ CONTACTS ##############*/
+/*################ FOOTER ################*/
+footer {
+    padding: 5rem 0;
+}
+
+footer .col-6 {
+    width: 50%;
+}
+
+footer .col-6 p {
+    font-family: Lato, sans-serif;
+    color: #000;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+footer .col-6 .right {
+    text-align: right;
+}
+
+/*################ FOOTER ################*/
+

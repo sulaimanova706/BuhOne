@@ -1,0 +1,208 @@
+
+@media (max-width: 991.98px) {
+    #home .home-content{
+        padding-top: 20rem;
+    }
+    #home .home-content h3 {
+        width: 70%;
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    .btn{
+        width: 25rem;
+        height: 5rem;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .title{
+        font-size: 4rem;
+    }
+    #services .col-2{
+        width: 50%;
+    }
+    #services .post-item h3{
+        font-size: 2.2rem;
+    }
+    #company .row{
+        flex-wrap: wrap;
+    }
+    #company .col-6{
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+    #company .col-6 p{
+        width: 100%;
+    }
+    #company .col-6 .col-3{
+        width: 50%;
+    }
+    #contacts .col-6 h3{
+        font-size: 4rem;
+    }
+    #contacts .col-6 svg{
+        width: 15%;
+    }
+    #contacts .col-6 ul{
+        display: block;
+    }
+    #contacts .col-6 ul li{
+        font-size: 1.5rem;
+    }
+    .mobile-btn {
+        display: flex;
+        z-index: 1000000;
+    }
+
+    .menu-items, .menu-items1 {
+        display: none;
+    }
+
+    .show-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 900000;
+    }
+    .show-menu .mobile-menu{
+        display: block;
+    }
+}
+@media (max-width: 767.98px) {
+    #home .home-content h3 {
+        width: 80%;
+        font-size: 3rem;
+    }
+    .owl-dots button{
+        width: 4%;
+    }
+    .name{
+        font-size: 1.7rem;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .btn a{
+        font-size: 1.5rem;
+    }
+    #company .col-6 p{
+        font-size: 1.5rem;
+    }
+    #company .col-6 .col-3{
+        width: 50%;
+    }
+    #comment .box{
+        font-size: 1.5rem;
+    }
+    #contacts{
+        padding: 1rem;
+    }
+    #contacts .row{
+        display: block;
+    }
+    #contacts .col-6{
+        width: 100%;
+    }
+    #contacts .col-6 h3{
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    #contacts .col-6 p{
+        margin-bottom: 2.5rem;
+    }
+    #contacts .col-6 ul{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    #contacts .col-6 ul li{
+        width: 100%;
+    }
+    #contacts .col-6 form button{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #home {
+        height: 60rem;
+    }
+    .owl-dots button{
+        width: 5%;
+    }
+    #services .col-2{
+        width: 100%;
+    }
+    #company{
+        padding: 3rem 0;
+    }
+    #company .col-6 .col-3{
+        width: 50%;
+    }
+    #comment{
+        padding: 3rem 0 20rem;
+    }
+    #comment .box{
+        padding: 3rem;
+    }
+    #contacts .col-6{
+        margin-left: 0;
+    }
+    #contacts .col-6 h3{
+        font-size: 3rem;
+    }
+    #contacts .col-6 p{
+        font-size: 1.5rem;
+    }
+    #contacts .col-6 label{
+        width: 100%;
+    }
+    #contacts .col-6 textarea{
+        height: 5rem;
+    }
+    footer .row{
+        display: block;
+    }
+    footer .col-6{
+        width: 100%;
+    }
+    footer .col-6 .right{
+        text-align: left;
+    }
+    footer .col-6 p{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 375.98px){
+    #home .home-content h3{
+        width: 100%;
+    }
+    .btn{
+        width: 15rem;
+    }
+    #home{
+        height: 65rem;
+    }
+    #services{
+        padding: 3rem 0;
+    }
+    .title{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    #company .col-6 .col-3{
+        width: 100%;
+    }
+    #comment .box{
+        font-size: 1.2rem;
+    }
+    #contacts .btn{
+        width: 100%;
+    }
+}
